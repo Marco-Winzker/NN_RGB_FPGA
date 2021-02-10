@@ -1,7 +1,7 @@
 %==========================================================================
 %
 %   Author: Thomas Florkowski
-%   Version: 10.08.2020
+%   Version: 10.08.2020 - (10.2.2021: corrected typo in line 124)
 %   Release: Marco Winzker, Hochschule Bonn-Rhein-Sieg, 17.09.2020
 %
 %==========================================================================
@@ -121,7 +121,7 @@ fprintf('Generate Network \n')
 %[3 3 1] means for example:
 %   - Input layer has three neurons
 %   - One hidden layer with three neurons
-%   - The output layer has three neurons
+%   - The output layer has one neuron
 %[3 5 6 2] means for example:
 %   - Input layer has three neurons
 %   - Two hidden layer, the first has five neurons and the second six neurons
