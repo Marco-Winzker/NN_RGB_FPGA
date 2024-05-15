@@ -1,0 +1,188 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2020  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+# Date created = 13:06:45  March 22, 2021
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		dramtestv2_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone 10 LP"
+set_global_assignment -name DEVICE 10CL120ZF484I8G
+set_global_assignment -name TOP_LEVEL_ENTITY nn_rgb
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:06:45  MARCH 22, 2021"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 7
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_location_assignment PIN_V21 -to r_in[0]
+set_location_assignment PIN_W22 -to r_in[1]
+set_location_assignment PIN_W21 -to r_in[2]
+set_location_assignment PIN_Y22 -to r_in[3]
+set_location_assignment PIN_AA22 -to r_in[4]
+set_location_assignment PIN_AA21 -to r_in[5]
+set_location_assignment PIN_AB20 -to r_in[6]
+set_location_assignment PIN_AA20 -to r_in[7]
+set_location_assignment PIN_N21 -to g_in[0]
+set_location_assignment PIN_P22 -to g_in[1]
+set_location_assignment PIN_P21 -to g_in[2]
+set_location_assignment PIN_R22 -to g_in[3]
+set_location_assignment PIN_R21 -to g_in[4]
+set_location_assignment PIN_U22 -to g_in[5]
+set_location_assignment PIN_U21 -to g_in[6]
+set_location_assignment PIN_V22 -to g_in[7]
+set_location_assignment PIN_J22 -to b_in[0]
+set_location_assignment PIN_J21 -to b_in[1]
+set_location_assignment PIN_J20 -to b_in[2]
+set_location_assignment PIN_L22 -to b_in[3]
+set_location_assignment PIN_L21 -to b_in[4]
+set_location_assignment PIN_M22 -to b_in[5]
+set_location_assignment PIN_M21 -to b_in[6]
+set_location_assignment PIN_N22 -to b_in[7]
+set_location_assignment PIN_AB3 -to r_out[0]
+set_location_assignment PIN_AA3 -to r_out[1]
+set_location_assignment PIN_AB4 -to r_out[2]
+set_location_assignment PIN_AA4 -to r_out[3]
+set_location_assignment PIN_AB5 -to r_out[4]
+set_location_assignment PIN_AA5 -to r_out[5]
+set_location_assignment PIN_AB6 -to r_out[6]
+set_location_assignment PIN_AA6 -to r_out[7]
+set_location_assignment PIN_U1 -to g_out[0]
+set_location_assignment PIN_U2 -to g_out[1]
+set_location_assignment PIN_V1 -to g_out[2]
+set_location_assignment PIN_V2 -to g_out[3]
+set_location_assignment PIN_W1 -to g_out[4]
+set_location_assignment PIN_W2 -to g_out[5]
+set_location_assignment PIN_Y1 -to g_out[6]
+set_location_assignment PIN_Y2 -to g_out[7]
+set_location_assignment PIN_J1 -to b_out[0]
+set_location_assignment PIN_J2 -to b_out[1]
+set_location_assignment PIN_M1 -to b_out[2]
+set_location_assignment PIN_M2 -to b_out[3]
+set_location_assignment PIN_N1 -to b_out[4]
+set_location_assignment PIN_N2 -to b_out[5]
+set_location_assignment PIN_R1 -to b_out[6]
+set_location_assignment PIN_R2 -to b_out[7]
+set_location_assignment PIN_AB14 -to enable_in[0]
+set_location_assignment PIN_AA14 -to enable_in[1]
+set_location_assignment PIN_AB13 -to enable_in[2]
+set_location_assignment PIN_AA19 -to vs_in
+set_location_assignment PIN_H1 -to vs_out
+set_location_assignment PIN_AB18 -to hs_in
+set_location_assignment PIN_H2 -to hs_out
+set_location_assignment PIN_AB19 -to de_in
+set_location_assignment PIN_H3 -to de_out
+set_location_assignment PIN_T22 -to clk
+set_location_assignment PIN_P1 -to clk_o
+set_location_assignment PIN_AB16 -to reset_n
+set_location_assignment PIN_AA13 -to led[0]
+set_location_assignment PIN_AB10 -to led[1]
+set_location_assignment PIN_AA10 -to led[2]
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_in[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_in[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_in[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_in[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_in[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_in[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_in[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_in[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_in[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_in[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_in[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_in[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_in[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_in[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_in[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_in[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_in[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_in[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_in[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_in[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_in[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_in[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_in[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_in[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_out[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_out[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_out[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_out[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_out[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_out[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_out[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_out[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_out[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_out[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_out[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_out[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_out[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_out[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_out[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_out[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_out[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_out[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_out[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_out[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_out[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_out[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_out[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_out[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to enable_in[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to enable_in[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to enable_in[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vs_in
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vs_out
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hs_in
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hs_out
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to de_in
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to de_out
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk_o
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk_n_o
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to reset_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led[2]
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name OPTIMIZATION_MODE BALANCED
+set_global_assignment -name SDC_FILE nn_rgb.sdc
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
